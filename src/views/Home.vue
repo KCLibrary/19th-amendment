@@ -41,9 +41,6 @@ export default {
 .theme--light.v-application .text--primary {color: #339193 !important;} 
 .theme--light.v-application .text--secondary { color: #d5654D !important;}
 .theme--light.v-application .text--accent{color:#e9dfc1 !important;}
-.theme--dark.v-btn.v-btn--icon {
-    color: #339193 !important;
-}
 
 .web-container {
   background-color: #e9dfc1;
