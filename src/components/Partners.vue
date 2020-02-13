@@ -1,7 +1,7 @@
 <template>
 <div id="partners">
     <h1 class="display-2 text--primary font-weight-black text-center pa-6">Partners</h1>
-    <v-carousel :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
+    <v-carousel continuous="true" cycle="true" :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
