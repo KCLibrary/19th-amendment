@@ -38,14 +38,14 @@ export default {
 .v-application {
   font-family: 'Raleway', sans-serif !important;
 }
-.v-application h1.display-4, .v-application h1.display-3, .v-application h1.display-2, .v-application h1.display-1, .cursive-font.display-1, .cursive-font {
+.v-application h1.display-4, .cursive-font {
   font-family: 'Homemade Apple', cursive !important;
 }
 .theme--light.v-application .text--primary {color: #339193 !important;} 
 .theme--light.v-application .text--secondary { color: #d5654D !important;}
-.theme--light.v-application .text--accent{color:#e9dfc1 !important;}
+.theme--light.v-application .text--accent{color: white !important;}
 
 .web-container {
-  background-color: #e9dfc1;
+  background-color: white;
 }
 </style>

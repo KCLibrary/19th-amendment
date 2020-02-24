@@ -66,7 +66,7 @@ export default {
 <style lang="scss">
 #partners {
     height: 100%;
-    background: #E9DEC1;
+    background: white;
     padding: 2rem 0 0 0;
     position: relative;
     z-index: 4;
@@ -74,8 +74,8 @@ export default {
 .partner {
     &__banner {
         background: #339193;
-        border-bottom: double #E9DEC1 15px;
-        border-top: double #E9DEC1 15px;
+        border-bottom: double white 15px;
+        border-top: double white 15px;
         padding: 1.5rem;
         margin-top: 1.5rem;
         white-space: nowrap;
@@ -87,7 +87,7 @@ animation: textFade 2s;
  width: 15%; 
  position: relative;
  background: #d5654D;
- color: #e9dfc1;
+ color: white;
  text-align: center;
  padding: 1.5em 2em; /* Adjust to suit */
  margin: 0 auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the partner-ribbon 'graphics' take up 24px themselves so we double it. */

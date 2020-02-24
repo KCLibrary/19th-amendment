@@ -45,7 +45,7 @@ animation: textFade 2s;
  width: 35%; 
  position: relative;
  background: #d5654D;
- color: #e9dfc1;
+ color: white;
  text-align: center;
  padding: 1em 2em; /* Adjust to suit */
  margin: 0 auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */

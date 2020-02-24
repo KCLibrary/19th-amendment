@@ -29,7 +29,7 @@ export default {
         margin: 1rem;
         display: block;
         text-decoration: none;
-        color: #e9dfc1;
+        color: white;
         transition: all .5s ease-in-out;
         animation: hideNav 4s ease-in-out;
         animation-delay: 1s;
