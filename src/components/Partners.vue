@@ -45,7 +45,7 @@ export default {
     },
      async created() {
         const { data } = await axios.post(
-        process.env.PARTNERS,
+        process.env.VUE_APP_PARTNERS,
         {headers: { "Content-Type": "application/json" }}
         );
         let partners = data.entries

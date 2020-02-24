@@ -16,7 +16,7 @@ export default {
   }),
   async created() {
     const { data } = await axios.post(
-      process.env.HISTORY_SECTION,
+      process.env.VUE_APP_HISTORY_SECTION,
       JSON.stringify({}),
       {
         headers: { "Content-Type": "application/json" }
