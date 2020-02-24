@@ -1,5 +1,5 @@
 <template>
-<div id="social">
+<div id="social" class="secondary">
     <v-row>
         <v-col :md="3" :sm="12">
             <v-card
@@ -210,10 +210,8 @@ export default {
 <style scoped>
 #social {
     min-height: 60vh;
-    background-image: url(../assets/social.jpg);
-    background-size: cover;
-    background-position: center;
     padding: 2rem;
+    padding-bottom: 0;
 }
 .v-list-item__title, .v-list-item__subtitle {
     overflow: unset !important;

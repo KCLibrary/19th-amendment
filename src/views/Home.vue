@@ -4,6 +4,7 @@
     <app-intro/>
     <app-history/>
     <app-partners/>
+    <app-election/>
     <app-social/>
     <app-footer/>
   </div>
@@ -17,6 +18,7 @@ import appHistory from '@/components/History.vue'
 import appPartners from '@/components/Partners.vue'
 import appSocial from '@/components/Social.vue'
 import appFooter from '@/components/Footer.vue'
+import appElection from '@/components/Election.vue'
 
 export default {
   name: 'home',
@@ -25,6 +27,7 @@ export default {
     appIntro,
     appHistory,
     appPartners,
+    appElection,
     appSocial,
     appFooter
   },

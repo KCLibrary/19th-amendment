@@ -10,7 +10,7 @@
       >
         <v-col class="text-center" cols="12">
           <h1 class="display-4 text--accent font-weight-black intro-text">Votes For Women</h1>
-          <p class="text--accent ribbon text-uppercase"><span class="ribbon-content">Celebrating 100 years of the 19<sup>th</sup> amendment</span></p>
+          <p class="text--accent ribbon text-uppercase"><span class="ribbon-content">The 19<sup>th</sup> Amendment in the Heartland</span></p>
         </v-col>
       </v-row>
     </v-parallax>

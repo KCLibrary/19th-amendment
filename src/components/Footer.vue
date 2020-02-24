@@ -29,7 +29,6 @@ export default {
 #footer {
     background: #d5654D;
     height: 100%;
-    margin-top: 8rem;
 }
 .v-footer {
     height: 20vh !important;

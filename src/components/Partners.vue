@@ -1,173 +1,87 @@
 <template>
 <div id="partners">
-    <h1 class="display-2 text--primary font-weight-black text-center pa-6">Partners</h1>
+    <h1 class="display-2 text--primary font-weight-black text-center pa-6">Regional Partners</h1>
+    <h3 class="grey--text text--darken-1 text-center px-12 py-5">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</h3>
     <v-carousel continuous="true" cycle="true" :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
-      :src="item.src"
     >
     <v-row class="mx-12 pb-12">
-        <v-col cols-md="5">
+        <v-col class="col-6" :md="2" :sm="6" :key="partner._id" v-for="partner in item">
             <v-card
-        class="mx-auto"
+        class="mx-auto d-flex pb-3"
         max-width="344"
+        height="200"
         light
-        >
+        hover
+        :href="partner.url"
+        > <v-img class="align-end white--text" height="200" :src="'https://cms.kclibrary.org'+partner.image.path" gradient="to top, rgba(255,255,255,1) 15%, rgba(51,145,147,.25) 100%">
             <v-card-text>
-                <p class="display-1 text--primary">
-                    SPONSOR NAME
-                </p>
-                <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vitae exercitationem excepturi obcaecati ipsam sint ducimus officia fugiat aut.
-                </div>
+                <h3 class="text--primary text-left">
+                    {{partner.name}}
+                </h3>
             </v-card-text>
-            <v-card-actions>
-                <v-btn
-                    text
-                    color="secondary"
-                >
-                    Link to Sponsor
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        </v-col>
-         <v-col cols-md="5">
-            <v-card
-        class="mx-auto"
-        max-width="344"
-        light
-        >
-            <v-card-text>
-                <p class="display-1 text--primary">
-                    SPONSOR NAME
-                </p>
-                <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vitae exercitationem excepturi obcaecati ipsam sint ducimus officia fugiat aut.
-                </div>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn
-                    text
-                    color="secondary"
-                >
-                    Link to Sponsor
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        </v-col>
-         <v-col cols-md="5">
-            <v-card
-        class="mx-auto"
-        max-width="344"
-        light
-        >
-            <v-card-text>
-                <p class="display-1 text--primary">
-                    SPONSOR NAME
-                </p>
-                <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vitae exercitationem excepturi obcaecati ipsam sint ducimus officia fugiat aut.
-                </div>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn
-                    text
-                    color="secondary"
-                >
-                    Link to Sponsor
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        </v-col>
-         <v-col cols-md="5">
-            <v-card
-        class="mx-auto"
-        max-width="344"
-        light
-        >
-            <v-card-text>
-                <p class="display-1 text--primary">
-                    SPONSOR NAME
-                </p>
-                <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vitae exercitationem excepturi obcaecati ipsam sint ducimus officia fugiat aut.
-                </div>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn
-                    text
-                    color="secondary"
-                >
-                    Link to Sponsor
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-        </v-col>
-         <v-col cols-md="5">
-            <v-card
-        class="mx-auto"
-        max-width="344"
-        light
-        >
-            <v-card-text>
-                <p class="display-1 text--primary">
-                    SPONSOR NAME
-                </p>
-                <div class="text--primary">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vitae exercitationem excepturi obcaecati ipsam sint ducimus officia fugiat aut.
-                </div>
-            </v-card-text>
-            <v-card-actions>
-                <v-btn
-                    text
-                    color="secondary"
-                >
-                    Link to Sponsor
-                </v-btn>
-            </v-card-actions>
+        </v-img>
         </v-card>
         </v-col>
     </v-row>
     </v-carousel-item>
     <p class="partner-ribbon"><span class="partner-ribbon-content"></span></p>
   </v-carousel>
+  <div class="partner__banner"></div>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'Partners',
   data () {
       return {
         items: [
-          {
-            src: '',
-          },
-          {
-            src: '',
-          },
-          {
-            src: '',
-          },
-          {
-            src: '',
-          },
         ],
       }
     },
+     async created() {
+        const { data } = await axios.post(
+        process.env.PARTNERS,
+        {headers: { "Content-Type": "application/json" }}
+        );
+        let partners = data.entries
+        let partnerCount = partners.length
+        let slideCount = Math.ceil(partnerCount/12)
+        console.log(slideCount)
+        for(let i=0;i<slideCount;i++){
+            let end = 12 * (i + 1)
+            let start = i * 12
+            console.log(start, end)
+            let partnerSlide = partners.slice(start, end)
+            this.items.push(partnerSlide)
+        }
+    }
 };
 </script>
 
-<style >
+<style lang="scss">
 #partners {
     height: 100%;
     background: #E9DEC1;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     position: relative;
     z-index: 4;
 }
-
+.partner {
+    &__banner {
+        background: #339193;
+        border-bottom: double #E9DEC1 15px;
+        border-top: double #E9DEC1 15px;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
 .partner-ribbon {
 animation: textFade 2s;
  width: 15%; 

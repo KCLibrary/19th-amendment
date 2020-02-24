@@ -3,6 +3,7 @@
         <a class="ribbon-nav__item ribbon-nav__home" href="/"><span class="ribbon-nav__text">Home</span></a>
         <a class="ribbon-nav__item ribbon-nav__history" href="#history"><span class="ribbon-nav__text">History</span></a>
         <a class="ribbon-nav__item ribbon-nav__partners" href="#partners"><span class="ribbon-nav__text">Partners</span></a>
+        <a class="ribbon-nav__item ribbon-nav__voting" href="#voting"><span class="ribbon-nav__text">Election</span></a>
         <a class="ribbon-nav__item ribbon-nav__social" href="#social"><span class="ribbon-nav__text">Social</span></a>
    </div>
 </template>
