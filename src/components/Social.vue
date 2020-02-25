@@ -10,7 +10,7 @@
     dark
     max-width="400"
   >
-    <v-card-text class="text--primary headline font-weight-bold">
+    <v-card-text class="text--primary headline social__sub-heading font-weight-bold">
      "I’d rather go down in history as one lone Negro who dared to tell the government that it had done a dastardly thing than to save my skin by taking back what I said."
     </v-card-text>
 
@@ -50,7 +50,7 @@ Ida B. Wells
   >
     
 
-    <v-card-text class="text--primary headline font-weight-bold">
+    <v-card-text class="text--primary headline social__sub-heading font-weight-bold">
     "I always feel the movement is a sort of mosaic. Each of us puts in one little stone, and then you get a great mosaic at the end."
     </v-card-text>
 
@@ -90,7 +90,7 @@ Alice Paul
   >
     
 
-    <v-card-text class="text--primary headline font-weight-bold">
+    <v-card-text class="text--primary headline social__sub-heading font-weight-bold">
       "If Congress refuse to listen to and grant what women ask, there is but one course left then to pursue. What is there left for women to do but to become the mothers of the future government?"
     </v-card-text>
 
@@ -130,7 +130,7 @@ Victoria Claflin Woodhull
   >
     
 
-    <v-card-text class="text--primary headline font-weight-bold">
+    <v-card-text class="text--primary headline social__sub-heading font-weight-bold">
       "The world has never yet seen a truly great and virtuous nation because in the degradation of woman the very fountains of life are poisoned at their source."
     </v-card-text>
 
@@ -169,7 +169,7 @@ Lucretia Mott
     color="primary"
     light
   >
-  <h3 class="white--text text-center px-12 py-5">How are you commemorating the 19th Amendment centennial? Share your experiences on Twitter, Facebook, and Instagram using the hashtags below. </h3>
+  <h3 class="white--text text-center px-md-12 py-5 social__content">How are you commemorating the 19th Amendment centennial? Share your experiences on Twitter, Facebook, and Instagram using the hashtags below. </h3>
   <v-card-title class="white--text justify-space-around">
       <span>
       <v-icon
@@ -208,12 +208,33 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 #social {
     padding: 2rem;
     height: 100%;
     padding-top: 0;
     box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+}
+.social {
+  content: '';
+  &__heading {
+        @include respond(phone) {
+        font-size: 2rem !important; 
+        line-height: 1.25 !important;    
+        }
+    }
+    &__sub-heading {
+      @include respond(phone) {
+          font-size: 1.25rem !important; 
+          line-height: 1.25 !important;     
+      }
+    }
+    &__content {
+        @include respond(phone) {
+            font-size: 1rem !important;     
+           
+        }
+    }
 }
 .v-list-item__title, .v-list-item__subtitle {
     overflow: unset !important;

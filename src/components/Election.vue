@@ -11,7 +11,7 @@
         </v-col>
       </v-row>
       <v-row class="pt-8">
-        <v-col :md="3" :sm="0"></v-col>
+        <v-col :md="3" :sm="12" cols="12"></v-col>
            <v-col :md="3" :sm="12" :key="i" v-for="(item, i) in info" class="pt-0 mt-0">
               <v-card
               class="mx-auto pb-3"

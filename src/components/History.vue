@@ -1,12 +1,12 @@
 <template>
     <div id="history">
         <div class="history__banner"></div>
-        <h1 class="display-2 text--primary font-weight-black text-center pt-6" v-html="heading">Commemorating the Centennial</h1>
+        <h1 class="display-2 text--primary font-weight-black text-center pt-6 history__heading" v-html="heading">Commemorating the Centennial</h1>
         <div class="history__content grey--text text--darken-1 text-center" v-html="body">
         </div>
         <v-row class="pa-6 history__banner">
             <v-col :md="12" class="pt-0 mt-0">
-                <h2 class="text--accent text-center py-4 pt-0 mt-0">More About the 19th Amendment</h2>
+                <h2 class="text--accent text-center py-4 pt-0 mt-0 history__sub-heading">More About the 19th Amendment</h2>
             </v-col>
             <v-row class="pt-0 mt-0">
                  <v-col :md="4" :sm="12" :key="i" v-for="(item, i) in info" class="pt-0 mt-0">
@@ -86,9 +86,26 @@ export default {
         white-space: nowrap;
         overflow: hidden;
     }
+    &__heading {
+    @include respond(phone) {
+        font-size: 2rem !important; 
+        line-height: 1.25 !important;     
+    }
+    }
+    &__sub-heading {
+    @include respond(phone) {
+        font-size: 1.25rem !important; 
+        line-height: 1.25 !important;     
+    }
+    }
     &__content {
         margin: 1rem 2rem;
         padding: 1rem 2rem;
+        @include respond(phone) {
+            font-size: .75rem !important;     
+            margin: 1rem 1rem;
+            padding: 0 1rem;
+        }
     }
 }
 </style>

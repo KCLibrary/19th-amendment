@@ -1,4 +1,27 @@
 <template>
+<div>
+    <v-card
+    color="secondary" class="mobile-nav"
+    >
+        <v-toolbar color="secondary" dense>
+            <v-menu offset-y>
+                <template v-slot:activator="{ on }">
+                    <v-app-bar-nav-icon color="white" v-on="on"></v-app-bar-nav-icon>
+                </template>
+                <v-list flat width="100vw" rounded="false" color="secondary">
+                    <v-list-item
+                    class="white--text font-weight-black"
+                    v-for="(item, index) in items"
+                    :key="index"
+                    :href="item.href"
+                    >
+                    <v-list-item-title class="white--text">{{ item.title }}</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+            <v-spacer></v-spacer>
+        </v-toolbar>
+    </v-card>
     <div class="ribbon-nav">
         <a class="ribbon-nav__item ribbon-nav__home" href="/"><span class="ribbon-nav__text">Home</span></a>
         <a class="ribbon-nav__item ribbon-nav__history" href="#history"><span class="ribbon-nav__text">History</span></a>
@@ -6,20 +29,39 @@
         <a class="ribbon-nav__item ribbon-nav__voting" href="#voting"><span class="ribbon-nav__text">Election</span></a>
         <a class="ribbon-nav__item ribbon-nav__social" href="#social"><span class="ribbon-nav__text">Social</span></a>
    </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'Navigation',
+  data: () => ({
+      items: [
+        { title: 'Home', href: '/' },
+        { title: 'History', href:"#history" },
+        { title: 'Partners', href:"#partners" },
+        { title: 'Election', href:"#voting" },
+        { title: 'Social', href:"#social" }
+      ],
+    }),
 };
 </script>
 
 <style scoped lang="scss">
 //screens < 1280p cutoff switch to standard hamburger menu for mobile browsing
+.mobile-nav {
+    display: none;
+    @include respond(tab-port) {
+        display: contents;
+    }
+}
 .ribbon-nav{
     position: fixed;
     z-index: 100;
     top: 35%;
+    @include respond(tab-port) {
+        display: none;
+    }
     &__item{
         background: #dea62c;
         clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
@@ -34,7 +76,7 @@ export default {
         animation: hideNav 4s ease-in-out;
         animation-delay: 1s;
          &:hover {
-            width: 15vw;
+            width: 25vw;
             & .ribbon-nav__text{
                 width: 100%;    
                 opacity: 1;
@@ -43,8 +85,8 @@ export default {
     }
     @keyframes hideNav {
         0%   {width: .5vw;}
-        10% {width: 15vw;}
-        90% {width: 15vw;}
+        10% {width: 20vw;}
+        90% {width: 20vw;}
         100% {width: .5vw;}
     }
     &__text {

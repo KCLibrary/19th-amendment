@@ -1,14 +1,14 @@
 <template>
 <div id="partners">
-    <h1 class="display-2 text--primary font-weight-black text-center pa-6">Regional Partners</h1>
-    <h3 class="grey--text text--darken-1 text-center px-12 py-5">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</h3>
+    <h1 class="display-2 text--primary font-weight-black text-center pa-6 partner__heading">Regional Partners</h1>
+    <h3 class="grey--text text--darken-1 text-center px-12 py-5 partner__content">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</h3>
     <v-carousel continuous="true" cycle="true" :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
     >
     <v-row class="mx-12 pb-12">
-        <v-col class="col-6" :md="2" :sm="12" :key="partner._id" v-for="partner in item">
+        <v-col :md="2" :sm="12" :key="partner._id" v-for="partner in item">
             <v-card
         class="mx-auto d-flex pb-3"
         max-width="344"
@@ -82,6 +82,24 @@ export default {
         white-space: nowrap;
         overflow: hidden;
     }
+    &__heading {
+        @include respond(phone) {
+        font-size: 2rem !important; 
+        line-height: 1.25 !important;    
+        }
+    }
+    &__sub-heading {
+    @include respond(phone) {
+        font-size: 1.25rem !important; 
+        line-height: 1.25 !important;     
+    }
+    }
+    &__content {
+        @include respond(phone) {
+            font-size: 1rem !important;     
+            padding: 0 1rem;
+        }
+    }
 }
 .partner-ribbon {
 animation: textFade 2s;
@@ -92,6 +110,9 @@ animation: textFade 2s;
  text-align: center;
  padding: 1.5em 2em; /* Adjust to suit */
  margin: 0 auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the partner-ribbon 'graphics' take up 24px themselves so we double it. */
+@include respond(phone) {
+    width: 80%
+}
 }
 .partner-ribbon:before, .partner-ribbon:after {
  content: "";
@@ -129,5 +150,6 @@ animation: textFade 2s;
 }
 .v-carousel__controls {
     margin-bottom: 1rem !important;
+    color: white !important;
 }
 </style>
