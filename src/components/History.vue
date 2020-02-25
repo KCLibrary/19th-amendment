@@ -75,6 +75,7 @@ export default {
 #history {
     height: 100%;
     background: white;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
 }
 .history {
     &__banner{

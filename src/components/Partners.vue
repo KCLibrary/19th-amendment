@@ -8,7 +8,7 @@
       :key="i"
     >
     <v-row class="mx-12 pb-12">
-        <v-col class="col-6" :md="2" :sm="6" :key="partner._id" v-for="partner in item">
+        <v-col class="col-6" :md="2" :sm="12" :key="partner._id" v-for="partner in item">
             <v-card
         class="mx-auto d-flex pb-3"
         max-width="344"
@@ -70,6 +70,7 @@ export default {
     padding: 2rem 0 0 0;
     position: relative;
     z-index: 4;
+    box-shadow: inset 0 -7px 9px -7px rgba(0,0,0,0.4);
 }
 .partner {
     &__banner {

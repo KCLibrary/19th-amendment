@@ -213,6 +213,9 @@ export default {
 <style scoped>
 #social {
     padding: 2rem;
+    height: 100%;
+    padding-top: 0;
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
 }
 .v-list-item__title, .v-list-item__subtitle {
     overflow: unset !important;
