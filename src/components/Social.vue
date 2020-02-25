@@ -2,7 +2,7 @@
 <div id="social" class="primary">
   <h1 class="display-2 white--text font-weight-black text-center pa-6">Share Your Story</h1>
     <v-row>
-        <v-col :md="3" :sm="12">
+        <v-col :md="3" :sm="12"  cols="12">
             <v-card
     class="mx-auto"
     color="white"
@@ -40,7 +40,7 @@ Ida B. Wells
     </v-card-actions>
   </v-card>
   </v-col>
-  <v-col :md="3" :sm="12">
+  <v-col :md="3" :sm="12"  cols="12">
             <v-card
     class="mx-auto"
     color="white"
@@ -80,7 +80,7 @@ Alice Paul
     </v-card-actions>
   </v-card>
   </v-col>
-  <v-col :md="3" :sm="12">
+  <v-col :md="3" :sm="12"  cols="12">
             <v-card
     class="mx-auto"
     color="white"
@@ -120,7 +120,7 @@ Victoria Claflin Woodhull
     </v-card-actions>
   </v-card>
   </v-col>
-  <v-col :md="3" :sm="12">
+  <v-col :md="3" :sm="12"  cols="12">
             <v-card
     class="mx-auto"
     color="white"

@@ -11,7 +11,7 @@
         <v-col :md="2" :sm="12" :key="partner._id" v-for="partner in item">
             <v-card
         class="mx-auto d-flex pb-3"
-        max-width="344"
+        width="344"
         height="200"
         light
         hover
@@ -51,12 +51,15 @@ export default {
         let partners = data.entries
         let partnerCount = partners.length
         let slideCount = Math.ceil(partnerCount/12)
-        console.log(slideCount)
         for(let i=0;i<slideCount;i++){
             let end = 12 * (i + 1)
             let start = i * 12
-            console.log(start, end)
             let partnerSlide = partners.slice(start, end)
+            if(partnerSlide.length !== 12){
+                for(let l = partnerSlide.length;l<12;l++){
+                    partnerSlide.push({name: " ", url: "#", image: {path: ""}})
+                }
+            }
             this.items.push(partnerSlide)
         }
     }
