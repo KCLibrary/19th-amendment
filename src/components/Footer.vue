@@ -5,6 +5,18 @@
     padless
     color="primary"
   >
+  <v-btn
+    color="secondary"
+    dark
+    small
+    absolute
+    top
+    right
+    fab
+    @click="$vuetify.goTo(0)"
+  >
+    <v-icon>mdi-arrow-up-thick</v-icon>
+  </v-btn>
     <v-card
       flat
       tile

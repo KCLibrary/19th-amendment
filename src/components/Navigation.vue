@@ -3,7 +3,7 @@
     <v-card
     color="secondary" class="mobile-nav"
     >
-        <v-toolbar color="secondary" dense>
+        <v-toolbar color="secondary" dense fixed>
             <v-menu offset-y>
                 <template v-slot:activator="{ on }">
                     <v-app-bar-nav-icon color="white" v-on="on"></v-app-bar-nav-icon>
@@ -13,22 +13,23 @@
                     class="white--text font-weight-black"
                     v-for="(item, index) in items"
                     :key="index"
-                    :href="item.href"
+                    @click="$vuetify.goTo(item.selector)"
                     >
                     <v-list-item-title class="white--text">{{ item.title }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
             </v-menu>
             <v-spacer></v-spacer>
+              <v-toolbar-title class="white--text font-weight-black">Votes For Women</v-toolbar-title>
         </v-toolbar>
     </v-card>
-    <div class="ribbon-nav">
-        <a class="ribbon-nav__item ribbon-nav__home" href="/"><span class="ribbon-nav__text">Home</span></a>
-        <a class="ribbon-nav__item ribbon-nav__history" href="#history"><span class="ribbon-nav__text">History</span></a>
-        <a class="ribbon-nav__item ribbon-nav__partners" href="#partners"><span class="ribbon-nav__text">Partners</span></a>
-        <a class="ribbon-nav__item ribbon-nav__voting" href="#voting"><span class="ribbon-nav__text">Election</span></a>
-        <a class="ribbon-nav__item ribbon-nav__social" href="#social"><span class="ribbon-nav__text">Social</span></a>
-   </div>
+    <ul class="ribbon-nav">
+        <li class="ribbon-nav__item ribbon-nav__home" @click="$vuetify.goTo('#home')"><span class="ribbon-nav__text">Home</span></li>
+        <li class="ribbon-nav__item ribbon-nav__history" @click="$vuetify.goTo('#history')"><span class="ribbon-nav__text">History</span></li>
+        <li class="ribbon-nav__item ribbon-nav__partners" @click="$vuetify.goTo('#partners')"><span class="ribbon-nav__text">Partners</span></li>
+        <li class="ribbon-nav__item ribbon-nav__voting" @click="$vuetify.goTo('#voting')"><span class="ribbon-nav__text">Election</span></li>
+        <li class="ribbon-nav__item ribbon-nav__social" @click="$vuetify.goTo('#social')"><span class="ribbon-nav__text">Social</span></li>
+   </ul>
 </div>
 </template>
 
@@ -37,11 +38,11 @@ export default {
   name: 'Navigation',
   data: () => ({
       items: [
-        { title: 'Home', href: '/' },
-        { title: 'History', href:"#history" },
-        { title: 'Partners', href:"#partners" },
-        { title: 'Election', href:"#voting" },
-        { title: 'Social', href:"#social" }
+        { title: 'Home', selector: '/' },
+        { title: 'History', selector:"#history" },
+        { title: 'Partners', selector:"#partners" },
+        { title: 'Election', selector:"#voting" },
+        { title: 'Social', selector:"#social" }
       ],
     }),
 };
@@ -55,10 +56,18 @@ export default {
         display: contents;
     }
 }
+header.v-sheet.v-sheet--tile.theme--light.v-toolbar.v-toolbar--dense.secondary{
+    position: fixed !important;
+    z-index: 100 !important;
+    width: 100vw !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
 .ribbon-nav{
     position: fixed;
     z-index: 100;
     top: 35%;
+    cursor: pointer;
     @include respond(tab-port) {
         display: none;
     }
