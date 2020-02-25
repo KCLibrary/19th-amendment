@@ -1,10 +1,11 @@
 <template>
-<div id="social" class="secondary">
+<div id="social" class="primary">
     <v-row>
         <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="#339193"
+    color="secondary"
+    hover
     dark
     max-width="400"
   >
@@ -43,7 +44,8 @@ Ida B. Wells
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="#339193"
+    color="secondary"
+    hover
     dark
     max-width="400"
   >
@@ -82,7 +84,8 @@ Ida B. Wells
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="#339193"
+    color="secondary"
+    hover
     dark
     max-width="400"
   >
@@ -121,7 +124,8 @@ Ida B. Wells
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="#339193"
+    color="secondary"
+    hover
     dark
     max-width="400"
   >
@@ -161,40 +165,45 @@ Ida B. Wells
     <v-row class="px-5 mb-4">
         <v-col :cols="12">
              <v-card
+             flat
     class="mx-auto"
-    color="accent"
+    color="primary"
     light
   >
-  <marquee>
-  <v-card-title>
+  <v-card-title class="white--text justify-space-around">
+      <span>
+        <v-icon
+        large
+        right
+        color="white"
+      >
+        mdi-twitter
+      </v-icon> @2020centennial </span>
+      <span>
       <v-icon
         large
         right
-      >
-        mdi-twitter
-      </v-icon> @2020centennial <v-icon
-        large
-        right
+        color="white"
       >
         mdi-pound
-      </v-icon>TowardEquality <v-icon
+      </v-icon> VotesForWomen </span>
+      <span>
+      <v-icon
         large
         right
+        color="white"
       >
         mdi-pound
-      </v-icon>WomenVoters <v-icon
+      </v-icon> 19thAmendment </span>
+      <span>
+      <v-icon
         large
         right
+        color="white"
       >
         mdi-pound
-      </v-icon>1920t02020 <v-icon
-        large
-        right
-      >
-        mdi-pound
-      </v-icon>19thamendmentcentennial
+      </v-icon> Suffrage100 </span>
     </v-card-title>
-    </marquee>
     </v-card>
         </v-col>
     </v-row>
@@ -209,9 +218,7 @@ export default {
 
 <style scoped>
 #social {
-    min-height: 60vh;
     padding: 2rem;
-    padding-bottom: 0;
 }
 .v-list-item__title, .v-list-item__subtitle {
     overflow: unset !important;

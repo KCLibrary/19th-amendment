@@ -73,7 +73,7 @@ export default {
 }
 .partner {
     &__banner {
-        background: #339193;
+        background: #755373;
         border-bottom: double white 15px;
         border-top: double white 15px;
         padding: 1.5rem;
@@ -86,7 +86,7 @@ export default {
 animation: textFade 2s;
  width: 15%; 
  position: relative;
- background: #d5654D;
+ background: #dea62c;
  color: white;
  text-align: center;
  padding: 1.5em 2em; /* Adjust to suit */
@@ -97,7 +97,7 @@ animation: textFade 2s;
  position: absolute;
  display: block;
  bottom: -1em;
- border: 1.5em solid #c76e5b;
+ border: 1.5em solid #e5b857;
  z-index: -1;
 }
 .partner-ribbon:before {
@@ -115,7 +115,7 @@ animation: textFade 2s;
  position: absolute;
  display: block;
  border-style: solid;
- border-color: #bc462c transparent transparent transparent;
+ border-color: #b9881d transparent transparent transparent;
  bottom: -1em;
 }
 .partner-ribbon .partner-ribbon-content:before {

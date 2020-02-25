@@ -78,7 +78,7 @@ export default {
 }
 .history {
     &__banner{
-        background: #339193;
+        background: #755373;
         border-bottom: double white 15px;
         border-top: double white 15px;
         padding: 1.5rem;

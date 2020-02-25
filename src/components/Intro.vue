@@ -44,7 +44,7 @@ export default {
 animation: textFade 2s;
  width: 35%; 
  position: relative;
- background: #d5654D;
+ background: #dea62c;
  color: white;
  text-align: center;
  padding: 1em 2em; /* Adjust to suit */
@@ -55,7 +55,7 @@ animation: textFade 2s;
  position: absolute;
  display: block;
  bottom: -1em;
- border: 1.5em solid #c76e5b;
+ border: 1.5em solid #e5b857;
  z-index: -1;
 }
 .ribbon:before {
@@ -73,7 +73,7 @@ animation: textFade 2s;
  position: absolute;
  display: block;
  border-style: solid;
- border-color: #bc462c transparent transparent transparent;
+ border-color: #b9881d transparent transparent transparent;
  bottom: -1em;
 }
 .ribbon .ribbon-content:before {

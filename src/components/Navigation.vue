@@ -21,7 +21,7 @@ export default {
     z-index: 100;
     top: 35%;
     &__item{
-        background: #d5654D;
+        background: #dea62c;
         clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
         padding-top: 1rem;
         padding-bottom: 1rem;

@@ -3,15 +3,15 @@
   <v-footer
     absolute
     padless
-    color="secondary"
+    color="primary"
   >
     <v-card
       flat
       tile
-      class="secondary text--accent text-center"
+      class="primary text--accent text-center"
       width="100vw"
     >
-      <v-card-text class="text--accent cursive-font display-1 pt-12">
+      <v-card-text class="text--accent">
         <a href="https://kclibrary.org" style="text-decoration: none;" class="text--accent">&copy;{{ new Date().getFullYear() }} — <strong>Kansas City Public Library</strong></a>
       </v-card-text>
     </v-card>
@@ -27,10 +27,12 @@ export default {
 
 <style scoped>
 #footer {
-    background: #d5654D;
+    background: #755373;
     height: 100%;
 }
-.v-footer {
-    height: 20vh !important;
+.v-list-item__title, .v-list-item__subtitle {
+  overflow: unset !important;
+  text-overflow: unset !important;
+  white-space: unset !important;
 }
 </style>
