@@ -1,5 +1,6 @@
 <template>
 <div id="social" class="primary">
+  <h1 class="display-2 text--secondary font-weight-black text-center pa-6">Share Your Story</h1>
     <v-row>
         <v-col :md="3" :sm="12">
             <v-card
@@ -12,7 +13,7 @@
     
 
     <v-card-text class="headline font-weight-bold">
-      "One had better die fighting against injustice than to die like a dog or a rat in a trap"
+     "I’d rather go down in history as one lone Negro who dared to tell the government that it had done a dastardly thing than to save my skin by taking back what I said."
     </v-card-text>
 
     <v-card-actions>
@@ -52,7 +53,7 @@ Ida B. Wells
     
 
     <v-card-text class="headline font-weight-bold">
-      "One had better die fighting against injustice than to die like a dog or a rat in a trap"
+    "I always feel the movement is a sort of mosaic. Each of us puts in one little stone, and then you get a great mosaic at the end."
     </v-card-text>
 
     <v-card-actions>
@@ -60,13 +61,13 @@ Ida B. Wells
         <v-list-item-avatar color="grey darken-3">
           <v-img
             class="elevation-6"
-            src="https://suffrage100ma.org/wp-content/uploads/2017/02/IdaBWells-225x300.jpg"
+            src="https://pbs.twimg.com/media/Cqy2VwTXYAAWiRs?format=jpg&name=small"
           ></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
           <v-list-item-title>
-Ida B. Wells
+Alice Paul
 </v-list-item-title>
         </v-list-item-content>
 
@@ -75,7 +76,7 @@ Ida B. Wells
           justify="end"
         >
           <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1931</span>
+          <span class="subheading mr-2">1977</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -92,7 +93,7 @@ Ida B. Wells
     
 
     <v-card-text class="headline font-weight-bold">
-      "One had better die fighting against injustice than to die like a dog or a rat in a trap"
+      "If Congress refuse to listen to and grant what women ask, there is but one course left then to pursue. What is there left for women to do but to become the mothers of the future government?"
     </v-card-text>
 
     <v-card-actions>
@@ -100,13 +101,13 @@ Ida B. Wells
         <v-list-item-avatar color="grey darken-3">
           <v-img
             class="elevation-6"
-            src="https://suffrage100ma.org/wp-content/uploads/2017/02/IdaBWells-225x300.jpg"
+            src="https://images.gr-assets.com/authors/1245720874p2/251090.jpg"
           ></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
           <v-list-item-title>
-Ida B. Wells
+Victoria Claflin Woodhull
 </v-list-item-title>
         </v-list-item-content>
 
@@ -115,7 +116,7 @@ Ida B. Wells
           justify="end"
         >
           <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1931</span>
+          <span class="subheading mr-2">1927</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -132,7 +133,7 @@ Ida B. Wells
     
 
     <v-card-text class="headline font-weight-bold">
-      "One had better die fighting against injustice than to die like a dog or a rat in a trap"
+      "The world has never yet seen a truly great and virtuous nation because in the degradation of woman the very fountains of life are poisoned at their source."
     </v-card-text>
 
     <v-card-actions>
@@ -140,13 +141,13 @@ Ida B. Wells
         <v-list-item-avatar color="grey darken-3">
           <v-img
             class="elevation-6"
-            src="https://suffrage100ma.org/wp-content/uploads/2017/02/IdaBWells-225x300.jpg"
+            src="https://pbs.twimg.com/media/Cn5ODWcWYAA_vLL?format=jpg&name=small"
           ></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
           <v-list-item-title>
-Ida B. Wells
+Lucretia Mott
 </v-list-item-title>
         </v-list-item-content>
 
@@ -155,7 +156,7 @@ Ida B. Wells
           justify="end"
         >
           <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1931</span>
+          <span class="subheading mr-2">1880</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -170,15 +171,8 @@ Ida B. Wells
     color="primary"
     light
   >
+  <h3 class="white--text text-center px-12 py-5">How are you commemorating the 19th Amendment centennial? Share your experiences on Twitter, Facebook, and Instagram using the hashtags below. </h3>
   <v-card-title class="white--text justify-space-around">
-      <span>
-        <v-icon
-        large
-        right
-        color="white"
-      >
-        mdi-twitter
-      </v-icon> @2020centennial </span>
       <span>
       <v-icon
         large
