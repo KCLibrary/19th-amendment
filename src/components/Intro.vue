@@ -29,6 +29,7 @@ export default {
 }
 .ribbon-content {
   letter-spacing: .25rem;
+  font-weight: 700;
 }
 .intro-text {
   animation: textFade 2s;

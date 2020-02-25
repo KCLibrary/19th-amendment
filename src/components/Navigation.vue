@@ -50,6 +50,7 @@ export default {
     &__text {
         display: block;
         text-align: center; 
+        font-weight: 700;
         opacity: 0;
         transition: all .4s ease-in;
         text-transform: uppercase;

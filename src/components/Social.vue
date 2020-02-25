@@ -1,18 +1,16 @@
 <template>
 <div id="social" class="primary">
-  <h1 class="display-2 text--secondary font-weight-black text-center pa-6">Share Your Story</h1>
+  <h1 class="display-2 white--text font-weight-black text-center pa-6">Share Your Story</h1>
     <v-row>
         <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="secondary"
+    color="white"
     hover
     dark
     max-width="400"
   >
-    
-
-    <v-card-text class="headline font-weight-bold">
+    <v-card-text class="text--primary headline font-weight-bold">
      "I’d rather go down in history as one lone Negro who dared to tell the government that it had done a dastardly thing than to save my skin by taking back what I said."
     </v-card-text>
 
@@ -26,7 +24,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>
+          <v-list-item-title class="text--primary ">
 Ida B. Wells
 </v-list-item-title>
         </v-list-item-content>
@@ -35,8 +33,8 @@ Ida B. Wells
           align="center"
           justify="end"
         >
-          <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1931</span>
+          <v-icon class="text--primary mr-1">mdi-heart</v-icon>
+          <span class="text--primary subheading mr-2">1931</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -45,14 +43,14 @@ Ida B. Wells
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="secondary"
+    color="white"
     hover
     dark
     max-width="400"
   >
     
 
-    <v-card-text class="headline font-weight-bold">
+    <v-card-text class="text--primary headline font-weight-bold">
     "I always feel the movement is a sort of mosaic. Each of us puts in one little stone, and then you get a great mosaic at the end."
     </v-card-text>
 
@@ -66,7 +64,7 @@ Ida B. Wells
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>
+          <v-list-item-title class="text--primary ">
 Alice Paul
 </v-list-item-title>
         </v-list-item-content>
@@ -75,8 +73,8 @@ Alice Paul
           align="center"
           justify="end"
         >
-          <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1977</span>
+          <v-icon class="text--primary mr-1">mdi-heart</v-icon>
+          <span class="text--primary subheading mr-2">1977</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -85,14 +83,14 @@ Alice Paul
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="secondary"
+    color="white"
     hover
     dark
     max-width="400"
   >
     
 
-    <v-card-text class="headline font-weight-bold">
+    <v-card-text class="text--primary headline font-weight-bold">
       "If Congress refuse to listen to and grant what women ask, there is but one course left then to pursue. What is there left for women to do but to become the mothers of the future government?"
     </v-card-text>
 
@@ -106,7 +104,7 @@ Alice Paul
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>
+          <v-list-item-title class="text--primary ">
 Victoria Claflin Woodhull
 </v-list-item-title>
         </v-list-item-content>
@@ -115,8 +113,8 @@ Victoria Claflin Woodhull
           align="center"
           justify="end"
         >
-          <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1927</span>
+          <v-icon class="text--primary mr-1">mdi-heart</v-icon>
+          <span class="text--primary subheading mr-2">1927</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
@@ -125,14 +123,14 @@ Victoria Claflin Woodhull
   <v-col :md="3" :sm="12">
             <v-card
     class="mx-auto"
-    color="secondary"
+    color="white"
     hover
     dark
     max-width="400"
   >
     
 
-    <v-card-text class="headline font-weight-bold">
+    <v-card-text class="text--primary headline font-weight-bold">
       "The world has never yet seen a truly great and virtuous nation because in the degradation of woman the very fountains of life are poisoned at their source."
     </v-card-text>
 
@@ -146,7 +144,7 @@ Victoria Claflin Woodhull
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>
+          <v-list-item-title class="text--primary ">
 Lucretia Mott
 </v-list-item-title>
         </v-list-item-content>
@@ -155,8 +153,8 @@ Lucretia Mott
           align="center"
           justify="end"
         >
-          <v-icon class="mr-1">mdi-heart</v-icon>
-          <span class="subheading mr-2">1880</span>
+          <v-icon class="text--primary mr-1">mdi-heart</v-icon>
+          <span class="text--primary subheading mr-2">1880</span>
         </v-row>
       </v-list-item>
     </v-card-actions>
