@@ -72,7 +72,7 @@ header.v-sheet.v-sheet--tile.theme--light.v-toolbar.v-toolbar--dense.secondary{
         display: none;
     }
     &__item{
-        background: #dea62c;
+        background: #E2C740;
         clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
         padding-top: 1rem;
         padding-bottom: 1rem;

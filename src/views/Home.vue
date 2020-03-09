@@ -38,7 +38,7 @@ export default {
 .v-application {
   font-family: 'Merriweather', serif !important;
 }
-.theme--light.v-application .text--primary {color: #514270 !important;} 
+.theme--light.v-application .text--primary {color: #645682 !important;} 
 .theme--light.v-application .text--secondary { color: #E2C740 !important;}
 .theme--light.v-application .text--accent{color: white !important;}
 

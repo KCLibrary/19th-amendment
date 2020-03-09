@@ -21,7 +21,7 @@
               hover
               :href="item.url"
               > 
-                  <v-img class="align-end white--text" height="200" :src="item.image" gradient="to top, rgba(255,255,255,1) 15%, rgba(117,84,115,.25) 100%">
+                  <v-img class="align-end white--text" height="200" :src="item.image" gradient="to top, rgba(255,255,255,1) 15%, rgba(62,47,102,.25) 100%">
                       <v-card-text>
                           <h3 class="text--primary text-left">
                               {{item.name}}

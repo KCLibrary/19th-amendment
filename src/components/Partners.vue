@@ -16,7 +16,7 @@
         light
         hover
         :href="partner.url"
-        > <v-img class="align-end white--text" height="200" :src="'https://cms.kclibrary.org'+partner.image.path" gradient="to top, rgba(255,255,255,1) 15%, rgba(117,84,115,.25) 100%">
+        > <v-img class="align-end white--text" height="200" :src="'https://cms.kclibrary.org'+partner.image.path" gradient="to top, rgba(255,255,255,1) 15%, rgba(62,47,102,.25) 100%">
             <v-card-text>
                 <h3 class="text--primary text-left">
                     {{partner.name}}
@@ -77,7 +77,7 @@ export default {
 }
 .partner {
     &__banner {
-        background: #755373;
+        background: #645682;
         border-bottom: double white 15px;
         border-top: double white 15px;
         padding: 1.5rem;
@@ -109,7 +109,7 @@ export default {
 animation: textFade 2s;
  width: 15%; 
  position: relative;
- background: #dea62c;
+ background: #E2C740;
  color: white;
  text-align: center;
  padding: 1.5em 2em; /* Adjust to suit */
@@ -123,7 +123,7 @@ animation: textFade 2s;
  position: absolute;
  display: block;
  bottom: -1em;
- border: 1.5em solid #e5b857;
+ border: 1.5em solid #C9AD36;
  z-index: -1;
 }
 .partner-ribbon:before {

@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 #footer {
-    background: #755373;
+    background: #645682;
     height: 100%;
 }
 .v-list-item__title, .v-list-item__subtitle {
