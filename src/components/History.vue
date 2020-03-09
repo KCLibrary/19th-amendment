@@ -87,6 +87,7 @@ export default {
         overflow: hidden;
     }
     &__heading {
+        font-weight: 700 !important;
     @include respond(phone) {
         font-size: 2rem !important; 
         line-height: 1.25 !important;     
@@ -101,6 +102,7 @@ export default {
     &__content {
         margin: 1rem 2rem;
         padding: 1rem 2rem;
+        font-weight: 400 !important;
         @include respond(phone) {
             font-size: .75rem !important;     
             margin: 1rem 1rem;

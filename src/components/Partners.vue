@@ -1,7 +1,7 @@
 <template>
 <div id="partners">
     <h1 class="display-2 text--primary font-weight-black text-center pa-6 partner__heading">Regional Partners</h1>
-    <h3 class="grey--text text--darken-1 text-center px-12 py-5 partner__content">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</h3>
+    <p class="grey--text text--darken-1 text-center px-12 py-5 partner__content">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</p>
     <v-carousel continuous="true" :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
     <v-carousel-item
       v-for="(item,i) in items"
@@ -98,6 +98,7 @@ export default {
     }
     }
     &__content {
+        font-weight: 400;
         @include respond(phone) {
             font-size: 1rem !important;     
             padding: 0 1rem;

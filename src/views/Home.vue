@@ -34,15 +34,12 @@ export default {
 }
 </script>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
 .v-application {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Merriweather', serif !important;
 }
-.v-application h1.display-4, .cursive-font {
-  font-family: 'Homemade Apple', cursive !important;
-}
-.theme--light.v-application .text--primary {color: #755373 !important;} 
-.theme--light.v-application .text--secondary { color: #dea62c !important;}
+.theme--light.v-application .text--primary {color: #514270 !important;} 
+.theme--light.v-application .text--secondary { color: #E2C740 !important;}
 .theme--light.v-application .text--accent{color: white !important;}
 
 .web-container {

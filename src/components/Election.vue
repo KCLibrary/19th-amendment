@@ -6,7 +6,7 @@
       >
         <v-col class="text-center" cols="12">
           <h1 class="display-2 text--secondary font-weight-black text-center pa-6">Election & Voting Information</h1>
-          <h3 class="white--text text-center px-12 py-5">Register to vote, check your voter registration status, and see what’s on your local ballot using Vote 411 from the <strong>League of Women Voters Education Fund.</strong></h3>
+          <p class="white--text text-center px-12 py-5">Register to vote, check your voter registration status, and see what’s on your local ballot using Vote 411 from the <strong>League of Women Voters Education Fund.</strong></p>
           <v-btn color="primary" href="https://www.vote411.org/">Get Started</v-btn>
         </v-col>
       </v-row>

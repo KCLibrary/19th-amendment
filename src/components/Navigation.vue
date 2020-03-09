@@ -100,6 +100,7 @@ header.v-sheet.v-sheet--tile.theme--light.v-toolbar.v-toolbar--dense.secondary{
     }
     &__text {
         display: block;
+        font-family: 'Merriweather', serif !important;
         text-align: center; 
         font-weight: 700;
         opacity: 0;
