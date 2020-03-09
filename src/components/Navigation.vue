@@ -74,6 +74,7 @@ header.v-sheet.v-sheet--tile.theme--light.v-toolbar.v-toolbar--dense.secondary{
     &__item{
         background: #E2C740;
         clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
         padding-top: 1rem;
         padding-bottom: 1rem;
         width: .5vw;
