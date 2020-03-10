@@ -1,6 +1,33 @@
 <template>
 <div id="social" class="primary">
   <h1 class="display-2 white--text font-weight-black text-center pa-6">Share Your Story</h1>
+  <h3 class="white--text text-center px-md-12 px-5 mb-5 social__content">How are you commemorating the 19th Amendment centennial? Share your experiences on Twitter, Facebook, and Instagram using the hashtags below. </h3>
+  <v-card-title class="white--text justify-space-around hashtags mb-5">
+      <span>
+      <v-icon
+        large
+        right
+        color="white"
+      >
+        mdi-pound
+      </v-icon> VotesForWomen </span>
+      <span>
+      <v-icon
+        large
+        right
+        color="white"
+      >
+        mdi-pound
+      </v-icon> 19thAmendment </span>
+      <span>
+      <v-icon
+        large
+        right
+        color="white"
+      >
+        mdi-pound
+      </v-icon> Suffrage100 </span>
+    </v-card-title>
     <v-row>
         <v-col :md="3" :sm="12"  cols="12">
             <v-card
@@ -169,33 +196,6 @@ Lucretia Mott
     color="primary"
     light
   >
-  <h3 class="white--text text-center px-md-12 py-5 social__content">How are you commemorating the 19th Amendment centennial? Share your experiences on Twitter, Facebook, and Instagram using the hashtags below. </h3>
-  <v-card-title class="white--text justify-space-around">
-      <span>
-      <v-icon
-        large
-        right
-        color="white"
-      >
-        mdi-pound
-      </v-icon> VotesForWomen </span>
-      <span>
-      <v-icon
-        large
-        right
-        color="white"
-      >
-        mdi-pound
-      </v-icon> 19thAmendment </span>
-      <span>
-      <v-icon
-        large
-        right
-        color="white"
-      >
-        mdi-pound
-      </v-icon> Suffrage100 </span>
-    </v-card-title>
     </v-card>
         </v-col>
     </v-row>
@@ -214,6 +214,10 @@ export default {
     height: 100%;
     padding-top: 0;
     box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.4);
+}
+.hashtags {
+  font-weight: 700;
+  font-size: 2rem;
 }
 .social {
   content: '';
