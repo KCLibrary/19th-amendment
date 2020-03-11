@@ -99,7 +99,7 @@ export default {
     }
     &__content {
         font-weight: 400;
-        padding: 1rem 10rem !important;
+        padding: 1rem 10rem;
         @include respond(phone) {
             font-size: 1rem !important;     
             padding: 0 1rem;
