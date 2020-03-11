@@ -218,6 +218,9 @@ export default {
 .hashtags {
   font-weight: 700;
   font-size: 2rem;
+  @include respond(phone) {
+        font-size: 1.5rem !important;   
+        }
 }
 .social {
   content: '';
