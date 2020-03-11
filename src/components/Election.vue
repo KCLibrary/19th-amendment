@@ -15,19 +15,19 @@
            <v-col :md="3" :sm="12" :key="i" v-for="(item, i) in info" class="pt-0 mt-0">
               <v-card
               class="mx-auto pb-3"
-              max-width="344"
+              max-width="200"
               height="200"
-              light
-              hover
+              color="transparent"
+              flat
               :href="item.url"
               > 
-                  <v-img class="align-end white--text" height="200" :src="item.image" gradient="to top, rgba(255,255,255,1) 15%, rgba(62,47,102,.25) 100%">
-                      <v-card-text>
-                          <h3 class="text--primary text-left">
-                              {{item.name}}
-                          </h3>
-                      </v-card-text>
+                  <v-img class="align-end white--text" height="150" :src="item.image" contain="true" :ripple="false">
                   </v-img>
+                  <v-card-text class="">
+                      <h3 class="white--text text-center">
+                          {{item.name}}
+                      </h3>
+                  </v-card-text>
               </v-card>
           </v-col>
       </v-row>
@@ -39,8 +39,8 @@ export default {
   name: 'Intro',
   data: () => ({
     info: [
-      {url: "https://sos.kansas.gov/elections/registration-voting/", name: "Voting in Kansas", image: "https://cms.kclibrary.org/storage/uploads/2020/02/25/5e554fcb9919fsos.kansas.gov.png"},
-      {url: "https://www.sos.mo.gov/elections", name: "Voting in Missouri", image: "https://cms.kclibrary.org/storage/uploads/2020/02/25/5e554fcd420fdwww.sos.mo.gov.png"}
+      {url: "https://sos.kansas.gov/elections/registration-voting/", name: "Voting in Kansas", image: "https://cms.kclibrary.org/storage/uploads/2020/03/11/5e693d05640e1Voting_icon_KS.png"},
+      {url: "https://www.sos.mo.gov/elections", name: "Voting in Missouri", image: "https://cms.kclibrary.org/storage/uploads/2020/03/11/5e693d0596005Voting_icon_MO.png"}
     ]
   })
 };
