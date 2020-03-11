@@ -101,7 +101,7 @@ export default {
     }
     &__content {
         margin: 1rem 2rem;
-        padding: 1rem 2rem;
+        padding: 1rem 10rem;
         font-weight: 400 !important;
         @include respond(phone) {
             font-size: .75rem !important;     
