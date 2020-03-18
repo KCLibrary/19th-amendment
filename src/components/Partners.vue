@@ -1,7 +1,7 @@
 <template>
 <div id="partners">
     <h1 class="display-2 text--primary font-weight-black text-center pa-6 partner__heading">Regional Partners</h1>
-    <p class="grey--text text--darken-1 text-center partner__content">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more about their programming and activities.</p>
+    <p class="grey--text text--darken-1 text-center partner__content">Many organizations, civic groups, and cultural institutions in western Missouri and eastern Kansas are commemorating the legacy of the 19th Amendment throughout its anniversary year. Visit their websites to learn more. <strong>Please note that due to the Coronavirus (COVID-19) outbreak, many public events and activities are currently suspended, canceled, or delayed.</strong></p>
     <v-carousel interval="15000" cycle="true" continuous="true" :show-arrows="false" height="100%" hide-delimiter-background dark="true" delimiter-icon="mdi-star">
     <v-carousel-item
       v-for="(item,i) in items"
